@@ -17,7 +17,7 @@ export default function CourseList({ courses }: { courses: Course[] }) {
 
 const CourseCard = ({ course }: { course: Course }) => {
 	return (
-		<CardContainer href={`/${course.id}`}>
+		<CardContainer href={`/quests/${course.id}`}>
 			<CourseCover src={course.cover} alt={`Cover image for course titled ${course.title}`} />
 			<DetailsContainer>
 				<CourseTitle className={cinzel.className}>{course.title}</CourseTitle>
@@ -92,13 +92,14 @@ const Stats = styled.div`
 	flex-flow: row wrap;
 	width: 100%;
 	justify-content: space-between;
+	gap: 10px;
 `;
 
 const StatCol = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	max-width: 142px;
+	min-width: 142px;
 	gap: 10px;
 `;
 
