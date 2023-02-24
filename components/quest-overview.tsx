@@ -177,9 +177,12 @@ const ExpBox = styled.div`
 `;
 
 const Experience = ({ exp }: { exp: number }) => {
+	// 27.97px
+	// Height
+	// 17.48px
 	return (
 		<ExpBox className={cinzel.className}>
-			<img src='/assets/exp.svg' alt='' />
+			<Image src='/assets/exp.svg' alt='' width={'28'} height={17.5} />
 			<div>+ {exp}</div>
 		</ExpBox>
 	);
