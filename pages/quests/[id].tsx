@@ -26,7 +26,7 @@ export const getStaticProps: GetStaticProps<{ data: SingleQuest | null }, { id: 
 	};
 };
 
-export const getStaticPaths: GetStaticPaths = () => {
+export const getStaticPaths: GetStaticPaths = async () => {
 	return {
 		paths: [],
 		fallback: 'blocking'
